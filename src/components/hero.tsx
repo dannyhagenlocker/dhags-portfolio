@@ -1,4 +1,11 @@
-import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
+import {
+  BsLinkedin,
+  BsInstagram,
+  BsGithub,
+  BsChatDots,
+  BsInfoLg,
+} from "react-icons/bs";
+import TypewriterComponent from "typewriter-effect";
 
 export default function Hero() {
   return (
@@ -6,15 +13,21 @@ export default function Hero() {
       <h1 className="font-inter text-4xl font-bold tracking-tight text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:text-slate-400 sm:text-5xl">
         <a href="/">Danny Hagenlocker</a>
       </h1>
-      <h2 className="mt-3 text-lg font-medium tracking-normal text-slate-300 sm:text-xl">
-        Student
-        <a
-          href="https://www.stanford.edu/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @ Stanford
-        </a>
+      <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl">
+        <TypewriterComponent
+          options={{
+            delay: 50,
+            deleteSpeed: "natural",
+            strings: [
+              "Student at Stanford 🌲",
+              "Studying EE + CS 💻",
+              "NASA Research Intern 🚀",
+              "MITES Semester Participant 🦫",
+            ],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </h2>
       <p className="mt-4 max-w-xs leading-normal">
         I build websites... Picture perfect something idk what the hell i'm
@@ -45,6 +58,22 @@ export default function Hero() {
           className="basis-10"
         >
           <BsInstagram className="h-6 w-6 transition-colors hover:text-slate-200" />
+        </a>
+        <a
+          href="mailto:dhagenlo@stanford.edu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="basis-8"
+        >
+          <BsChatDots className="h-6 w-6 transition-colors hover:text-slate-200" />
+        </a>
+        <a
+          href="/resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="basis-10"
+        >
+          <BsInfoLg className="h-6 w-6 transition-colors hover:text-slate-200" />
         </a>
       </div>
     </div>
