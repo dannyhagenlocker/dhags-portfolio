@@ -1,9 +1,10 @@
 import TypewriterComponent from "typewriter-effect";
-import SocialBar from "./socialBar";
+import SocialBar from "../socialBar";
+import Lanyard from "../lanyard.js";
 
 export default function Hero() {
   return (
-    <div className="sticky top-0 flex max-h-screen basis-1/2 flex-col py-20">
+    <div className="sticky top-0 flex max-h-screen basis-1/2 flex-col pt-20">
       <h1 className="font-inter text-4xl font-bold tracking-tight text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:text-slate-400 sm:text-5xl">
         <a href="/">Danny Hagenlocker</a>
       </h1>
@@ -17,17 +18,16 @@ export default function Hero() {
               "Studying EE + CS 💻",
               "NASA Research Intern 🚀",
               "MITES Semester Participant 🦫",
+              "FIRST Robotics Alumnus 🤖",
             ],
             autoStart: true,
             loop: true,
           }}
         />
       </h2>
-      <p className="mt-4 max-w-xs leading-normal">
-        I build websites... Picture perfect something idk what the hell i'm
-        typing just because I need to fill this space ya know...
-      </p>
+
       <SocialBar />
+      <Lanyard />
     </div>
   );
 }

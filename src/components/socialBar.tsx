@@ -5,7 +5,7 @@ import {
   BsChatDots,
   BsInfoLg,
 } from "react-icons/bs";
-import resume from "../../assets/Hagenlocker-Daniel_Resume copy.pdf";
+import resume from "../assets/Hagenlocker-Daniel_Resume copy.pdf";
 
 export default function SocialBar() {
   return (

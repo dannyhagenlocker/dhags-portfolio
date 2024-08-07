@@ -1,4 +1,5 @@
 import ImageJackbox from "../components/imageJackbox";
+import Lanyard from "../components/lanyard";
 import Hero from "../components/sections/hero";
 import Infograph from "../components/sections/infograph";
 export default function Home() {
