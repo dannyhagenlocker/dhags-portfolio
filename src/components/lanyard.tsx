@@ -19,7 +19,7 @@ import {
 } from "@react-three/rapier";
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 
-const bandTexturePath = "src/assets/DANNY HAGENLOCKER.png";
+const bandTexturePath = "src/assets/lanyard_texture.png";
 const cardPath = "src/assets/Scene.glb";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
