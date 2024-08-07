@@ -9,7 +9,7 @@ import resume from "../assets/Hagenlocker-Daniel_Resume copy.pdf";
 
 export default function SocialBar() {
   return (
-    <div className="ml-1 mt-8 flex">
+    <div className="ml-1 mt-4 flex">
       <a
         href="https://www.linkedin.com/in/danny-hagenlocker"
         target="_blank"

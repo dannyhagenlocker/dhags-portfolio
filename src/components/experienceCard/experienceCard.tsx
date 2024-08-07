@@ -10,7 +10,7 @@ interface ExperienceCardData {
 
 export default function ExperienceCard(props: ExperienceCardData) {
   return (
-    <section className="mb-2 max-w-full rounded-lg bg-slate-50 bg-opacity-0 p-4 transition-all hover:bg-opacity-5">
+    <section className="mb-2 max-w-full rounded-lg bg-slate-50 bg-opacity-0 p-4 backdrop-blur transition-all hover:bg-opacity-5 hover:shadow-lg hover:ring-1 hover:ring-black/10">
       <div className="flex max-w-lg">
         <div className="flex flex-col justify-between">
           <div className="mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">

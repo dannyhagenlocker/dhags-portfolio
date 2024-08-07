@@ -19,13 +19,12 @@ import {
 } from "@react-three/rapier";
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 
+const bandTexturePath = "src/assets/DANNY HAGENLOCKER.png";
+const cardPath = "src/assets/Scene.glb";
+
 extend({ MeshLineGeometry, MeshLineMaterial });
-useGLTF.preload(
-  "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb",
-);
-useTexture.preload(
-  "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg",
-);
+useGLTF.preload(cardPath);
+useTexture.preload(bandTexturePath);
 
 export default function Lanyard() {
   return (
@@ -78,12 +77,15 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
     angularDamping: 2,
     linearDamping: 2,
   };
-  const { nodes, materials } = useGLTF(
-    "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb",
-  );
-  const texture = useTexture(
-    "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg",
-  );
+  const cardProps = {
+    type: "dynamic",
+    canSleep: false,
+    colliders: false,
+    angularDamping: 2,
+    linearDamping: 2,
+  };
+  const { nodes, materials } = useGLTF(cardPath);
+  const texture = useTexture(bandTexturePath);
   const { width, height } = useThree((state) => state.size);
   const [curve] = useState(
     () =>
@@ -146,7 +148,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
       // Tilt it back towards the screen
       ang.copy(card.current.angvel());
       rot.copy(card.current.rotation());
-      card.current.setAngvel({ x: ang.x, y: ang.y - rot.y * 0.25, z: ang.z });
+      card.current.setAngvel({ x: ang.x, y: ang.y - rot.y * 0.05, z: ang.z });
     }
   });
 
@@ -155,7 +157,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
 
   return (
     <>
-      <group position={[-0.5, 4.25, 0]}>
+      <group position={[-1.5, 4, 0]}>
         <RigidBody ref={fixed} {...segmentProps} type="fixed" />
         <RigidBody position={[0, 0, 0]} ref={j1} {...segmentProps}>
           <BallCollider args={[0.1]} />
@@ -167,9 +169,9 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
           <BallCollider args={[0.1]} />
         </RigidBody>
         <RigidBody
-          position={[0.25, -1, -1]}
+          position={[2, -1, -1]}
           ref={card}
-          {...segmentProps}
+          {...cardProps}
           type={dragged ? "kinematicPosition" : "dynamic"}
         >
           <CuboidCollider args={[0.8, 1.125, 0.01]} />

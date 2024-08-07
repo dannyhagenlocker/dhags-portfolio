@@ -2,7 +2,7 @@ import ExperienceCard from "../experienceCard/experienceCard";
 
 export default function Infograph() {
   return (
-    <div className="flex h-[100rem] basis-1/2 flex-col py-20">
+    <div className="z-10 flex h-[100rem] basis-1/2 flex-col py-20">
       <h1 className="mb-6 text-base font-bold uppercase tracking-widest text-slate-200">
         Experiences
       </h1>
