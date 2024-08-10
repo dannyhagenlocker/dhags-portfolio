@@ -1,10 +1,4 @@
-import {
-  BsLinkedin,
-  BsGithub,
-  BsInstagram,
-  BsChatDots,
-  BsInfoLg,
-} from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsInstagram, BsChatDots } from "react-icons/bs";
 
 export default function SocialBar() {
   return (
