@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import tori from "../assets/IMG_0841.png";
 import golf from "../assets/IMG_3593.png";
 import me from "../assets/IMG_1955.jpg";
@@ -7,7 +7,6 @@ import logo from "../assets/logo.png";
 export default function ImageJackbox() {
   // Array of image URLs with different sizes to make changes visible
   const images = [logo, tori, golf, me];
-  const colors = ["outline-rose-500", "outline-blue-500", "outline-green-500"];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
