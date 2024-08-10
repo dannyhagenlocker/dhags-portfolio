@@ -8,9 +8,10 @@ export default function Home() {
       <div className="fixed inset-0 hidden max-h-screen md:block">
         <Lanyard />
       </div>
-      <div className="fixed bottom-0 right-0 z-20 m-5">
+      {/*      <div className="fixed bottom-0 right-0 z-20 m-5">
         <ImageJackbox />
-      </div>
+      </div> */}
+
       <div className="flex flex-col justify-center gap-4 md:flex-row">
         <Hero></Hero>
         <Infograph></Infograph>
