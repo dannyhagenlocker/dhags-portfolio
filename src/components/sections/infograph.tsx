@@ -132,7 +132,7 @@ Competition (2nd Place)"
       <div className="mt-8">
         <a
           className="group inline-flex items-center font-semibold leading-tight text-slate-200"
-          href="/projects"
+          href="/under-construction"
         >
           <span>
             <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
