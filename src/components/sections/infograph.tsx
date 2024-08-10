@@ -1,10 +1,11 @@
+import Button from "../button";
 import ExperienceCard from "../experienceCard";
 
 export default function Infograph() {
   return (
     <div className="z-10 flex flex-col pb-20 md:basis-1/2 md:pt-20">
       <div>
-        <h1 className="sticky top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-lg">
+        <h1 className="sticky top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
           About Me
         </h1>
         <div className="mb-8">
@@ -13,19 +14,25 @@ export default function Infograph() {
       </div>
 
       <div>
-        <h1 className="sticky top-0 z-50 mb-4 py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
+        <h1 className="sticky top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
           Experiences
         </h1>
         <div className="mb-8">
           <Experience />
+          <div className="mt-4">
+            <Button text="View Full Resumé" xlink="/resume.pdf" />
+          </div>
         </div>
       </div>
 
-      <h1 className="mb-4 text-base font-bold uppercase tracking-widest text-slate-200">
+      <h1 className="sticky top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
         Projects
       </h1>
       <div>
         <Projects />
+        <div className="mt-4">
+          <Button text="View All Projects" xlink="/under-construction" />
+        </div>
       </div>
     </div>
   );
@@ -128,33 +135,6 @@ Competition (2nd Place)"
         image="logos/recycleright_logo.png"
         xlink="https://www.youtube.com/watch?v=oEOv32Nhnbc"
       />
-
-      <div className="mt-8">
-        <a
-          className="group inline-flex items-center font-semibold leading-tight text-slate-200"
-          href="/projects"
-        >
-          <span>
-            <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
-              View All Projects
-            </span>
-            <span className="whitespace-nowrap">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
-          </span>
-        </a>
-      </div>
     </>
   );
 }
