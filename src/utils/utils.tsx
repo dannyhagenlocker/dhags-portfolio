@@ -3,3 +3,12 @@ function getImageUrl(name: string | undefined) {
 }
 
 export { getImageUrl };
+
+import { useEffect } from "react";
+
+function DocumentTitle(title: string) {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+}
+export { DocumentTitle };
