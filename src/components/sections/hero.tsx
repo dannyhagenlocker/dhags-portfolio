@@ -4,10 +4,7 @@ import Lanyard from "../lanyard.js";
 
 export default function Hero() {
   return (
-    <div className="pointer-events-none sticky top-0 z-10 flex max-h-screen basis-1/2 flex-col pt-16">
-      {/*<div className="absolute -left-5 top-0 -z-10 hidden h-full w-full opacity-0 transition-all md:block lg:opacity-100">
-        <Lanyard />
-  </div>*/}
+    <div className="pointer-events-none z-10 flex flex-col pt-16 md:sticky md:top-0 md:max-h-screen md:basis-1/2">
       <div className="pointer-events-auto rounded-lg border border-slate-400 border-opacity-0 p-4">
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 drop-shadow-md transition-all duration-300 hover:-translate-y-1 hover:text-slate-400 sm:text-5xl">
           <a href="/">Danny Hagenlocker</a>

@@ -1,14 +1,16 @@
 import Home from "./pages/home";
 import Spotlight from "./components/spotlight";
-import Lanyard from "./components/lanyard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import InProgress from "./pages/inProgress";
 
 function App() {
   return (
-    <div className="">
-      <Spotlight />
-
-      <Home />
-    </div>
+    <>
+      <div className="">
+        <Spotlight />
+        <Home />
+      </div>
+    </>
   );
 }
 
