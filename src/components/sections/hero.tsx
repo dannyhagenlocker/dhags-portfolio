@@ -1,6 +1,5 @@
 import TypewriterComponent from "typewriter-effect";
 import SocialBar from "../socialBar";
-import Lanyard from "../lanyard.js";
 
 export default function Hero() {
   return (
