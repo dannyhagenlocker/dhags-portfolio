@@ -69,7 +69,7 @@ function Experience() {
         ]}
         dates="Jun 2022 - Aug 2022"
         description="Wrote Python scripts to process TBs of geospatial data from ICESat-2 and LandSat-8 satellites. Built Recurrent Neural Network predicting temporal changes in a water reservoir’s capacity to yield timely and precise insights into potential water shortage events. Presented research at the American Geophysical Union (AGU) Fall Meeting 2022."
-        image="src/assets/companyLogos/nasa_logo.png"
+        image="logos/nasa_logo.png"
         xlink="https://www.youtube.com/watch?v=7xi6A9HeBX8"
       />
       <ExperienceCard
@@ -85,7 +85,7 @@ function Experience() {
         ]}
         dates="Jan 2022 - May 2024"
         description="Led team in designing/programming robots for FRC World Championship, created engineering documentation, and helped grow the team from 20 to 45 students"
-        image="src/assets/companyLogos/first_logo.png"
+        image="logos/first_logo.png"
         xlink="https://github.com/BBR8ERS-FRC-TEAM5557"
       />
       <ExperienceCard
@@ -100,7 +100,7 @@ function Experience() {
         ]}
         dates="Jun 2023 - Dec 2023"
         description="Led research project on convolutional neural networks, published science writing article about remote sensing, presented findings at MIT symposium"
-        image="src/assets/companyLogos/mites_logo.png"
+        image="logos/mites_logo.png"
         xlink="https://github.com/dannyhagenlocker/cnn-digit-detection"
       />
     </>
@@ -116,7 +116,7 @@ function Projects() {
         tags={["Physics Simulation", "Fusion 360", "Climate Science"]}
         description="Utility Patented packaging alternative for consumer electronics sourced entirely from agricultural waste (corn starch foam and wheat straw paper). Performed materials research, simulations, and analysis to determine optimal materials and box design. Awards include Dell Technologies: Conrad Challenge Winner and Blue Ocean Entrepreneurship
 Competition (2nd Place)"
-        image="src/assets/companyLogos/insidethebox_logo.jpg"
+        image="logos/insidethebox_logo.jpg"
         xlink="https://www.youtube.com/watch?v=XtEfn8ugU1E"
       />
       <ExperienceCard
@@ -124,7 +124,7 @@ Competition (2nd Place)"
         company="iOS App"
         tags={["Swift", "XCode", "Image Detection", "Augmented Reality"]}
         description="iOS apps for biogas digestion monitoring and waste contamination prevention in South Florida. Internationally recognized at entrepreneurship competitions for climate impact (Paradigm Challenge & Conrad Challenge)."
-        image="src/assets/companyLogos/recycleright_logo.png"
+        image="logos/recycleright_logo.png"
         xlink="https://www.youtube.com/watch?v=oEOv32Nhnbc"
       />
 

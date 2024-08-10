@@ -1,3 +1,5 @@
+import { getImageUrl } from "../utils/utils";
+
 interface ExperienceCardData {
   title: string;
   company?: string;
@@ -19,7 +21,10 @@ export default function ExperienceCard(props: ExperienceCardData) {
         <div className="flex max-w-lg">
           <div className="flex flex-col justify-between">
             <div className="mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-              <img src={props.image} className="max-w-full rounded-md"></img>
+              <img
+                src={getImageUrl(props.image)}
+                className="max-w-full rounded-md"
+              ></img>
             </div>
             <div className="mb-2 mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
               <p>{props.dates}</p>

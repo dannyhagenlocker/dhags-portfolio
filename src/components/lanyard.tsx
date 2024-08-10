@@ -18,9 +18,10 @@ import {
   useSphericalJoint,
 } from "@react-three/rapier";
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
+import { getImageUrl } from "../utils/utils";
 
-const bandTexturePath = "src/assets/lanyard_texture.png";
-const cardPath = "src/assets/Scene.glb";
+const bandTexturePath = getImageUrl("lanyard/lanyard_texture.png");
+const cardPath = getImageUrl("lanyard/lanyard.glb");
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 useGLTF.preload(cardPath);
