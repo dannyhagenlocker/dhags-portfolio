@@ -5,7 +5,7 @@ export default function Infograph() {
   return (
     <div className="z-10 flex flex-col pb-20 md:basis-1/2 md:pt-20">
       <div>
-        <h1 className="sticky top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-lg">
+        <h1 className="sticky top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
           About Me
         </h1>
         <div className="mb-8">
@@ -14,7 +14,7 @@ export default function Infograph() {
       </div>
 
       <div>
-        <h1 className="sticky top-0 z-50 mb-4 py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
+        <h1 className="sticky top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
           Experiences
         </h1>
         <div className="mb-8">
@@ -25,7 +25,7 @@ export default function Infograph() {
         </div>
       </div>
 
-      <h1 className="mb-4 text-base font-bold uppercase tracking-widest text-slate-200">
+      <h1 className="sticky top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
         Projects
       </h1>
       <div>
