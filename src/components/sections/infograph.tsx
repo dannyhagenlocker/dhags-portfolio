@@ -36,11 +36,12 @@ function AboutMe() {
   return (
     <>
       <p>
-        Hey, glad you’re here! My name is Danny and I am a rising freshmen
+        Hey, glad you’re here! My name is Danny and I am a rising freshman
         at&nbsp;
         <a
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          rel="noreferrer noopener"
+          rel="noopener noreferrer"
+          target="_blank"
           href="https://www.stanford.edu/"
         >
           Stanford University&nbsp;
