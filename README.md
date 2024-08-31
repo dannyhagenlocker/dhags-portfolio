@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/dannyhagenlocker/dhags-portfolio/blob/159b52793b74485c7ceee696f8f1d62401d94381/src/assets/logos/danny_logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/dannyhagenlocker/dhags-portfolio/blob/159b52793b74485c7ceee696f8f1d62401d94381/src/assets/logos/danny_logo.png" width="100" style="border-radius: 50%;"/>
 </div>
 <h1 align="center">
   danielhagenlocker.com
@@ -9,8 +9,8 @@
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/dannyhagenlocker/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+    <img src="https://api.netlify.com/api/v1/badges/a6347d2f-042c-44ab-bb9c-5dfc52369a5a/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
-![demo](https://github.com/dannyhagenlocker/dhags-portfolio/blob/de7d674aa5780a44891428690e6619b78c2f5136/src/assets/demo-page.png)
+![demo](https://github.com/dannyhagenlocker/dhags-portfolio/blob/74a31fb8c83d0e1a3c3d42ff13a5f84e9e25761d/src/assets/demo-page.png)
