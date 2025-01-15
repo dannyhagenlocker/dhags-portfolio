@@ -16,7 +16,7 @@ export default function Hero() {
               strings: [
                 "Student at Stanford 🌲",
                 "Studying EE + CS 💻",
-                "Researching teleoperation of robotic arms in MR 🦾"
+                "Researching teleoperation of robotic arms in MR 🦾",
                 "Ex-NASA Research Intern 🚀",
                 "MITES Semester Participant 🦫",
                 "FIRST Robotics Alumnus 🤖",
