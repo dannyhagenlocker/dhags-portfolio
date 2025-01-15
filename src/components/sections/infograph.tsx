@@ -55,7 +55,7 @@ function AboutMe() {
         </a>
         studying Electrical Engineering and Computer Science. Broadly speaking,
         I am interested in web dev, robotics, machine learning, aerospace, and
-        working through problems.
+        sustainable technologies.
       </p>
     </>
   );
