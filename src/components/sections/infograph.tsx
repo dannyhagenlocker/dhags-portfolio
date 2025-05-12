@@ -143,27 +143,3 @@ function Experience() {
     </>
   );
 }
-
-function Projects() {
-  return (
-    <>
-      <ExperienceCard
-        title="Inside the Box (US 20220324625)"
-        company="Patented Sustainable Packaging Startup"
-        tags={["Physics Simulation", "Fusion 360", "Climate Science"]}
-        description="Utility Patented packaging alternative for consumer electronics sourced entirely from agricultural waste (corn starch foam and wheat straw paper). Performed materials research, simulations, and analysis to determine optimal materials and box design. Awards include Dell Technologies: Conrad Challenge Winner and Blue Ocean Entrepreneurship
-Competition (2nd Place)"
-        image="logos/insidethebox_logo.jpg"
-        xlink="https://www.youtube.com/watch?v=XtEfn8ugU1E"
-      />
-      <ExperienceCard
-        title="RecycleRight"
-        company="iOS App"
-        tags={["Swift", "XCode", "Image Detection", "Augmented Reality"]}
-        description="iOS apps for biogas digestion monitoring and waste contamination prevention in South Florida. Internationally recognized at entrepreneurship competitions for climate impact (Paradigm Challenge & Conrad Challenge)."
-        image="logos/recycleright_logo.png"
-        xlink="https://www.youtube.com/watch?v=oEOv32Nhnbc"
-      />
-    </>
-  );
-}

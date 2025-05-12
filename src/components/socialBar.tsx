@@ -1,11 +1,9 @@
-import { BsLinkedin, BsGithub, BsInstagram, BsChatDots } from "react-icons/bs";
 import {
   TbBrandLinkedin,
   TbBrandGithub,
   TbBrandInstagram,
   TbMail,
 } from "react-icons/tb";
-import { FiGithub } from "react-icons/fi";
 
 export default function SocialBar() {
   return (
