@@ -12,7 +12,7 @@ export default function Button(props: ButtonData) {
       target="_blank"
     >
       <span>
-        <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+        <span className="border-b border-transparent pb-px transition group-hover:border-slate-100 motion-reduce:transition-none">
           {props.text}
         </span>
         <span className="whitespace-nowrap">

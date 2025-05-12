@@ -1,15 +1,22 @@
 import { BsLinkedin, BsGithub, BsInstagram, BsChatDots } from "react-icons/bs";
+import {
+  TbBrandLinkedin,
+  TbBrandGithub,
+  TbBrandInstagram,
+  TbMail,
+} from "react-icons/tb";
+import { FiGithub } from "react-icons/fi";
 
 export default function SocialBar() {
   return (
-    <div className="ml-1 mt-4 flex">
+    <div className="mt-2 flex">
       <a
         href="https://www.linkedin.com/in/danny-hagenlocker"
         target="_blank"
         rel="noopener noreferrer"
         className="basis-10"
       >
-        <BsLinkedin className="h-6 w-6 transition-colors hover:text-slate-200" />
+        <TbBrandLinkedin className="h-6 w-6 transition-colors hover:text-slate-200" />
       </a>
       <a
         href="https://github.com/dannyhagenlocker"
@@ -17,7 +24,7 @@ export default function SocialBar() {
         rel="noopener noreferrer"
         className="basis-10"
       >
-        <BsGithub className="h-6 w-6 transition-colors hover:text-slate-200" />
+        <TbBrandGithub className="h-6 w-6 transition-colors hover:text-slate-200" />
       </a>
       <a
         href="https://www.instagram.com/dannyhagenlocker/"
@@ -25,15 +32,15 @@ export default function SocialBar() {
         rel="noopener noreferrer"
         className="basis-10"
       >
-        <BsInstagram className="h-6 w-6 transition-colors hover:text-slate-200" />
+        <TbBrandInstagram className="h-6 w-6 transition-colors hover:text-slate-200" />
       </a>
       <a
         href="mailto:dhagenlo@stanford.edu"
         target="_blank"
         rel="noopener noreferrer"
-        className="basis-8"
+        className="basis-10"
       >
-        <BsChatDots className="h-6 w-6 transition-colors hover:text-slate-200" />
+        <TbMail className="h-6 w-6 transition-colors hover:text-slate-200" />
       </a>
     </div>
   );
