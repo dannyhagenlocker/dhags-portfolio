@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import UnderConstruction from "./pages/underConstruction";
 import NotFound from "./pages/notFound";
 import TabSwitcher from "./pages/TabSwitcher";
+import Projects from "./pages/projects";
+import Life from "./pages/life";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <TabSwitcher />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/life" element={<Life />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

@@ -1,18 +1,23 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useMemo } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const tabs = [
   { name: "Home", path: "/" },
-  { name: "Projects", path: "/under-construction" },
-  { name: "Life", path: "/under-construction" },
+  { name: "Projects", path: "/projects" },
+  { name: "Life", path: "/life" },
 ];
 
 export default function TabSwitcher() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const location = useLocation();
   const navigate = useNavigate();
 
-  const handleTabClick = (index: number, path: string) => {
-    setActiveIndex(index);
+  // Determine the active index based on the current URL path
+  const activeIndex = useMemo(() => {
+    const idx = tabs.findIndex((tab) => tab.path === location.pathname);
+    return idx === -1 ? 0 : idx;
+  }, [location.pathname]);
+
+  const handleTabClick = (path: string) => {
     navigate(path);
   };
 
@@ -27,7 +32,7 @@ export default function TabSwitcher() {
         {tabs.map((tab, index) => (
           <button
             key={tab.name}
-            onClick={() => handleTabClick(index, tab.path)}
+            onClick={() => handleTabClick(tab.path)}
             className={`relative z-10 h-[35px] w-[120px] rounded-full text-sm font-semibold transition-colors ${
               index === activeIndex
                 ? "text-slate-300"
