@@ -1,15 +1,38 @@
+import ProjectCard from "../components/projectCard";
 import { DocumentTitle } from "../utils/utils";
-import "../components/loader.css";
 
-export default function Projects() {
+export default function ProjectsPage() {
   DocumentTitle("Projects | Danny Hagenlocker");
+
   return (
-    <div className="mx-auto flex min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-      <div className="m-auto flex w-min flex-row">
-        <div className="loader mr-4 w-min border-r-2 border-slate-400 pr-4" />
-        <h1 className="my-auto min-w-max font-medium">
-          🚧 Coming soon, this page is currently under construction! 🚧
-        </h1>
+    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 lg:px-24">
+      <h1 className="mb-8 ml-4 mt-8 text-4xl font-bold text-slate-200 sm:text-5xl">
+        Projects
+      </h1>
+
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ProjectCard
+          title="AI Music VST"
+          description="A cloud-inferred MIDI plugin that uses neural audio synthesis for generative composition."
+          image="projects/aimusic.png"
+          tags={["VST", "AI", "Music", "Cloud Inference"]}
+          xlink="https://example.com/aimusic"
+        />
+        <ProjectCard
+          title="Fountain Hopper Simulator"
+          description="6DOF simulator to test thrust vector control, wind, fuel drain, and sensor noise for SSI rocket."
+          image="projects/fountainhopper.png"
+          tags={["Rocketry", "Simulation", "Controls", "TVC"]}
+          xlink="https://ssi.stanford.edu"
+        />
+        <ProjectCard
+          title="RecycleRight"
+          description="An image recognition tool that helps Miami-Dade residents identify recyclable materials."
+          image="projects/recycleright.png"
+          tags={["Computer Vision", "Recycling", "Civic Tech"]}
+          xlink="https://github.com/recycleright"
+        />
+        {/* Add more ProjectCard entries as needed */}
       </div>
     </div>
   );
