@@ -12,27 +12,28 @@ export default function ProjectsPage() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
-          title="AI Music VST"
-          description="A cloud-inferred MIDI plugin that uses neural audio synthesis for generative composition."
-          image="projects/aimusic.png"
-          tags={["VST", "AI", "Music", "Cloud Inference"]}
-          xlink="https://example.com/aimusic"
+          title="Water Loss Prediction"
+          description="An automated tool to analyze ICESat-2 data with a machine learning model that predicts future water level changes for better resource planning."
+          image="projects/nasa/cover.png"
+          tags={["High School", "Environmental", "ML", "NASA"]}
+          xlink="/under-construction"
         />
-        <ProjectCard
-          title="Fountain Hopper Simulator"
-          description="6DOF simulator to test thrust vector control, wind, fuel drain, and sensor noise for SSI rocket."
-          image="projects/fountainhopper.png"
-          tags={["Rocketry", "Simulation", "Controls", "TVC"]}
-          xlink="https://ssi.stanford.edu"
-        />
+
         <ProjectCard
           title="RecycleRight"
-          description="An image recognition tool that helps Miami-Dade residents identify recyclable materials."
-          image="projects/recycleright.png"
-          tags={["Computer Vision", "Recycling", "Civic Tech"]}
-          xlink="https://github.com/recycleright"
+          description="An interactive recycling app that uses AR stickers, voice and image recognition, and real-time data to help users identify recyclables, find nearby centers, and adopt eco-friendly habits."
+          image="projects/recycle_right/cover.png"
+          tags={["High School", "Environmental", "App Dev"]}
+          xlink="/under-construction"
         />
-        {/* Add more ProjectCard entries as needed */}
+
+        <ProjectCard
+          title="Inside the Box"
+          description="Inside The Box is a patented, environmentally friendly alternative to traditional electronic packaging, addressing the ecological issues associated with current materials."
+          image="projects/inside_the_box/cover.png"
+          tags={["High School", "Environmental"]}
+          xlink="/under-construction"
+        />
       </div>
     </div>
   );

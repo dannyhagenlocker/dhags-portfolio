@@ -14,10 +14,14 @@ function App() {
   const location = useLocation();
   const direction = useTransitionDirection();
 
+  const showTabSwitcher = ["/", "/projects", "/life"].includes(
+    location.pathname,
+  );
+
   return (
     <>
       <Spotlight />
-      <TabSwitcher />
+      {showTabSwitcher && <TabSwitcher />}
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route
