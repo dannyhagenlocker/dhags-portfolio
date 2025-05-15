@@ -1,6 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import TabSwitcher from "./pages/tabSwitcher";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Life from "./pages/life";
@@ -9,6 +8,7 @@ import NotFound from "./pages/notFound";
 import PageWrapper from "./components/pageWrapper";
 import { useTransitionDirection } from "./hooks/useDirection";
 import Spotlight from "./components/spotlight";
+import TabSwitcher from "./pages/TabSwitcher";
 
 function App() {
   const location = useLocation();
