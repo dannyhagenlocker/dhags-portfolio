@@ -12,13 +12,34 @@ export default function ProjectsPage() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
+          title="Oxy (FRC 2024)"
+          description="Final season. So so so close to winning a regional..."
+          image="projects/frc2024/cover.png"
+          tags={["High School", "Robotics"]}
+          xlink="/under-construction"
+        />
+        <ProjectCard
+          title="Stormy (FRC 2023)"
+          description="First time going to Houston."
+          image="projects/frc2023/cover.png"
+          tags={["High School", "Robotics"]}
+          xlink="/under-construction"
+        />
+        <ProjectCard
+          title="Candis (FRC 2022)"
+          description="My first season of robotics."
+          image="projects/frc2022/cover.png"
+          tags={["High School", "Robotics"]}
+          xlink="/under-construction"
+        />
+
+        <ProjectCard
           title="Water Loss Prediction"
           description="An automated tool to analyze ICESat-2 data with a machine learning model that predicts future water level changes for better resource planning."
           image="projects/nasa/cover.png"
           tags={["High School", "Environmental", "ML", "NASA"]}
           xlink="/under-construction"
         />
-
         <ProjectCard
           title="RecycleRight"
           description="An interactive recycling app that uses AR stickers, voice and image recognition, and real-time data to help users identify recyclables, find nearby centers, and adopt eco-friendly habits."
