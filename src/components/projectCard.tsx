@@ -23,7 +23,8 @@ export default function ProjectCard(props: ProjectCardData) {
         <img
           src={getImageUrl(props.image)}
           alt={props.title}
-          className="rounded-t-lg"
+          className="select-none rounded-t-lg"
+          draggable={false}
         />
       )}
 

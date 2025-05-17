@@ -23,7 +23,8 @@ export default function ExperienceCard(props: ExperienceCardData) {
             <div className="mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
               <img
                 src={getImageUrl(props.image)}
-                className="max-w-full rounded-md"
+                className="max-w-full select-none rounded-md"
+                draggable={false}
               ></img>
             </div>
             <div className="mb-2 mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
