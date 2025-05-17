@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         />
         <ProjectCard
           title="Bare-Metal Drum Maschine"
-          description="First time going to Houston."
+          description="A simple drum pad made incredibly difficult because its programmed entirely from scratch on a bare-metal MangoPi."
           image="projects/cs107e/cover.HEIC"
           tags={["Stanford", "CS 107E", "Software", "Hardware", "Music"]}
           xlink="/under-construction"

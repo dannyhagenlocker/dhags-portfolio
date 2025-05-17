@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { getImageUrl } from "../utils/utils";
 
 interface ProjectCardData {
@@ -13,18 +15,27 @@ interface TagDetails {
 }
 
 export default function ProjectCard(props: ProjectCardData) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
-    <a
+    <motion.a
       href={props.xlink}
       rel="noopener noreferrer"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.1 }}
       className="flex max-w-full flex-col rounded-lg border border-white/10 bg-white/5 shadow-md backdrop-blur transition hover:bg-white/10 hover:shadow-lg hover:ring-1 hover:ring-white/10"
     >
       {props.image && (
         <img
           src={getImageUrl(props.image)}
           alt={props.title}
-          className="select-none rounded-t-lg"
+          className={`select-none rounded-t-lg transition-opacity duration-700 ease-in ${
+            imageLoaded ? "opacity-100" : "opacity-0"
+          }`}
           draggable={false}
+          onLoad={() => setImageLoaded(true)}
         />
       )}
 
@@ -47,7 +58,7 @@ export default function ProjectCard(props: ProjectCardData) {
           </div>
         )}
       </div>
-    </a>
+    </motion.a>
   );
 }
 
