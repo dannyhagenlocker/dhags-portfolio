@@ -12,15 +12,44 @@ export default function ProjectsPage() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
+          title="Reinforcment Learning for Pupper"
+          description="Training policies for a robot dog using reinforcement learning."
+          image="projects/cs123/cover.jpg"
+          tags={["Stanford", "CS 123", "Robotics"]}
+          xlink="/under-construction"
+        />
+        <ProjectCard
+          title="Bare-Metal Drum Maschine"
+          description="First time going to Houston."
+          image="projects/cs107e/cover.HEIC"
+          tags={["Stanford", "CS 107E", "Software", "Hardware", "Music"]}
+          xlink="/under-construction"
+        />
+        <ProjectCard
+          title="E40M Gizmos"
+          description="All the random gadgets we made in this class."
+          image="projects/e40m/cover.HEIC"
+          tags={["Stanford", "ENGR 40M", "Hardware", "Stuff"]}
+          xlink="/under-construction"
+        />
+        <ProjectCard
+          title="danielhagenlocker.com"
+          description="My very own personal website."
+          image="projects/website/cover.png"
+          tags={["Personal", "Software"]}
+          xlink="/under-construction"
+        />
+
+        <ProjectCard
           title="Oxy (FRC 2024)"
-          description="Final season. So so so close to winning a regional..."
+          description="Senior year. So so so close to winning a regional..."
           image="projects/frc2024/cover.png"
           tags={["High School", "Robotics"]}
           xlink="/under-construction"
         />
         <ProjectCard
           title="Stormy (FRC 2023)"
-          description="First time going to Houston."
+          description="Went to Houston."
           image="projects/frc2023/cover.png"
           tags={["High School", "Robotics"]}
           xlink="/under-construction"
@@ -44,7 +73,7 @@ export default function ProjectsPage() {
           title="RecycleRight"
           description="An interactive recycling app that uses AR stickers, voice and image recognition, and real-time data to help users identify recyclables, find nearby centers, and adopt eco-friendly habits."
           image="projects/recycle_right/cover.png"
-          tags={["High School", "Environmental", "App Dev"]}
+          tags={["High School", "Environmental", "Software"]}
           xlink="/under-construction"
         />
 
