@@ -21,14 +21,14 @@ export default function ProjectsPage() {
         <ProjectCard
           title="Bare-Metal Drum Maschine"
           description="A simple drum pad made incredibly difficult because its programmed entirely from scratch on a bare-metal MangoPi."
-          image="projects/cs107e/cover.HEIC"
+          image="projects/cs107e/cover.png"
           tags={["Stanford", "CS 107E", "Software", "Hardware", "Music"]}
           xlink="/under-construction"
         />
         <ProjectCard
           title="E40M Gizmos"
           description="All the random gadgets we made in this class."
-          image="projects/e40m/cover.HEIC"
+          image="projects/e40m/cover.png"
           tags={["Stanford", "ENGR 40M", "Hardware", "Stuff"]}
           xlink="/under-construction"
         />
