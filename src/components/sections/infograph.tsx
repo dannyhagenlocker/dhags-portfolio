@@ -89,7 +89,7 @@ function Experience() {
           "Teamwork",
         ]}
         dates="Jun 2025 - Sep 2025"
-        description="Building the perfect customer experience @ SEA39 (Nessie)"
+        description="GenAI content for influencers and storefronts @ SEA70"
         image="logos/amazon_logo.png"
         xlink="https://www.amazon.com/"
       />
