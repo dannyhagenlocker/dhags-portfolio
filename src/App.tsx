@@ -9,6 +9,7 @@ import PageWrapper from "./components/pageWrapper";
 import { useTransitionDirection } from "./hooks/useDirection";
 import Spotlight from "./components/spotlight";
 import TabSwitcher from "./pages/TabSwitcher";
+import DrumMachinePage from "./pages/projects/DrumMaschinePage";
 
 function App() {
   const location = useLocation();
@@ -40,6 +41,8 @@ function App() {
               </PageWrapper>
             }
           />
+          <Route path="/projects/drum-maschine" element={<DrumMachinePage />} />
+
           <Route
             path="/life"
             element={

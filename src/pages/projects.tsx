@@ -23,7 +23,7 @@ export default function ProjectsPage() {
           description="A simple drum pad made incredibly difficult because its programmed entirely from scratch on a bare-metal MangoPi."
           image="projects/cs107e/cover.png"
           tags={["Stanford", "CS 107E", "Software", "Hardware", "Music"]}
-          xlink="/under-construction"
+          xlink="/projects/drum-maschine"
         />
         <ProjectCard
           title="E40M Gizmos"
