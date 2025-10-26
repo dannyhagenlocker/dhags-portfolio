@@ -1,7 +1,7 @@
 // File: pages/projects/drum-machine.tsx
 // This is a complete example for the Bare-Metal Drum Machine project
 
-import ProjectDemo, { MediaItem } from "../../components/ProjectDemo";
+import ProjectDemo, { MediaItem } from "../../components/projectDemo";
 import { DocumentTitle } from "../../utils/utils";
 
 export default function DrumMachinePage() {
