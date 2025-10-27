@@ -14,10 +14,11 @@ export default function Hero() {
               delay: 50,
               deleteSpeed: "natural",
               strings: [
-                "Freshman at Stanford",
+                "Sophomore at Stanford",
                 "Studying EE + CS",
                 "YC Summer Fellow Grant Recipient",
-                "Amazon SDE Intern",
+                "Incoming @ Databricks",
+                "Amazon Software Development Engineer",
                 "Stanford ARMLab Research Assistant",
                 "NASA ML Research",
                 "FIRST Robotics Alumni Mentor",
