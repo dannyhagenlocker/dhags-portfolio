@@ -24,16 +24,6 @@ export default function Infograph() {
           </div>
         </div>
       </div>
-
-      {/* <h1 className="sticky top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
-        Projects
-      </h1>
-      <div>
-        <Projects />
-        <div className="mt-4">
-          <Button text="View All Projects" xlink="/under-construction" />
-        </div>
-      </div> */}
     </div>
   );
 }
@@ -43,7 +33,7 @@ function AboutMe() {
   return (
     <>
       <p>
-        Hey, glad you’re here! My name is Danny and I am a freshman at&nbsp;
+        Hey, glad you’re here! My name is Danny and I am a sophomore at&nbsp;
         <a
           className="font-medium text-slate-200 hover:text-red-500 focus-visible:text-red-500"
           rel="noopener noreferrer"
@@ -63,6 +53,20 @@ function AboutMe() {
 function Experience() {
   return (
     <>
+      <ExperienceCard
+        title="Incoming Software Engineer"
+        company="Databricks"
+        tags={[
+          "High-Performance",
+          "Software",
+          "Cloud Native",
+          "Artificial Intelligence",
+        ]}
+        dates="Jun 2026 - Sep 2026"
+        description="Powering the lakehouse"
+        image="logos/databricks_logo.png"
+        xlink="https://www.databricks.com/"
+      />
       <ExperienceCard
         title="Summer Fellows Grant Recipient"
         company="Y Combinator"
@@ -89,7 +93,7 @@ function Experience() {
           "Teamwork",
         ]}
         dates="Jun 2025 - Sep 2025"
-        description="GenAI content for influencers and storefronts @ SEA70"
+        description="GenAI content creation for influencers and storefronts"
         image="logos/amazon_logo.png"
         xlink="https://www.amazon.com/"
       />

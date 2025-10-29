@@ -16,8 +16,8 @@ export default function Hero() {
               strings: [
                 "Sophomore at Stanford",
                 "Studying EE + CS",
-                "YC Summer Fellow Grant Recipient",
                 "Incoming @ Databricks",
+                "YC Summer Fellow Grant Recipient",
                 "Amazon Software Development Engineer",
                 "Stanford ARMLab Research Assistant",
                 "NASA ML Research",
