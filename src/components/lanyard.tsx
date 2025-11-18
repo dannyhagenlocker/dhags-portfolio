@@ -31,7 +31,7 @@ export default function Lanyard() {
   return (
     <Canvas camera={{ position: [0, 0, 10], fov: 20 }}>
       <ambientLight intensity={Math.PI} />
-      <Physics interpolate gravity={[0, -30, 0]} timeStep={1 / 60}>
+      <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
         <Band />
       </Physics>
       <Environment background blur={0.75}>

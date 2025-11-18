@@ -64,7 +64,7 @@ function Experience() {
         ]}
         dates="Jun 2026 - Sep 2026"
         description="Powering the lakehouse"
-        image="logos/databricks_logo.png"
+        image="logos/databricks_logo.jpeg"
         xlink="https://www.databricks.com/"
       />
       <ExperienceCard
@@ -78,12 +78,12 @@ function Experience() {
           "LLM's",
         ]}
         dates="Jun 2025 - Sep 2025"
-        description="20k to build something great, more coming soon..."
+        description="20k to build something great"
         image="logos/yc_logo.png"
         xlink="https://www.ycombinator.com/"
       />
       <ExperienceCard
-        title="Software Development Engineer Intern"
+        title="Software Development Engineer"
         company="Amazon"
         tags={[
           "Software Development",
@@ -94,7 +94,7 @@ function Experience() {
         ]}
         dates="Jun 2025 - Sep 2025"
         description="GenAI content creation for influencers and storefronts"
-        image="logos/amazon_logo.png"
+        image="logos/amazon_logo.jpeg"
         xlink="https://www.amazon.com/"
       />
       <ExperienceCard
@@ -108,7 +108,7 @@ function Experience() {
           "Imitation Learning",
         ]}
         dates="Jan 2025 - Jun 2025"
-        description="Mixed Reality teleoperation of robotic arms for imitation learning"
+        description="Mixed Reality teleop of robotic arms for imitation learning"
         image="logos/stanford_engineering_logo.jpeg"
         xlink="https://arm.stanford.edu/"
       />
@@ -129,8 +129,8 @@ function Experience() {
         xlink="https://www.youtube.com/watch?v=7xi6A9HeBX8"
       />
       <ExperienceCard
-        title="Alumni Mentor (Former Team President)"
-        company="FIRST Robotics"
+        title="Alumni Mentor & Former Team President"
+        company="FIRST Robotics (5557)"
         tags={[
           "Java",
           "Physics Simulation",
@@ -139,8 +139,8 @@ function Experience() {
           "Path Planning",
           "3D-Modeling",
         ]}
-        dates="Jan 2022 - Present"
-        description="Led team in designing/programming robots for FRC World Championship, helped grow team from 20 to 45 students"
+        dates="Jan 2022 - Forever"
+        description="Becoming, then mentoring, the next generation of engineers"
         image="logos/first_logo.png"
         xlink="https://github.com/BBR8ERS-FRC-TEAM5557"
       />

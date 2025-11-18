@@ -19,7 +19,7 @@ export default function ExperienceCard(props: ExperienceCardData) {
     <a href={props.xlink} target="_blank" rel="noopener noreferrer">
       <section className="mb-2 max-w-full rounded-lg bg-slate-50 bg-opacity-0 p-4 backdrop-blur transition-all hover:bg-opacity-5 hover:shadow-lg hover:ring-1 hover:ring-black/10">
         <div className="flex max-w-lg">
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col">
             <div className="mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
               <img
                 src={getImageUrl(props.image)}
@@ -27,21 +27,24 @@ export default function ExperienceCard(props: ExperienceCardData) {
                 draggable={false}
               ></img>
             </div>
-            <div className="mb-2 mr-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-              <p>{props.dates}</p>
-            </div>
+            {props.dates && (
+              <div className="mr-4 mt-4 w-20 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                <p>{props.dates}</p>
+              </div>
+            )}
           </div>
-          <div className="flex-grow text-left">
+          <div className="flex-grow gap-5 text-left">
             <p className="font-bold text-slate-200">{props.title}</p>
             <p className="font-semibold">{props.company}</p>
 
-            <p className="mb-3 mt-2 text-sm">{props.description}</p>
-            <div className="flex flex-wrap gap-y-2">
-              {props.tags &&
-                props.tags.map((tag) => {
-                  return <Tag name={tag} />;
-                })}
-            </div>
+            <p className="mt-1 text-sm">{props.description}</p>
+            {props.tags && props.tags.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-y-2">
+                {props.tags.map((tag) => (
+                  <Tag key={tag} name={tag} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>
