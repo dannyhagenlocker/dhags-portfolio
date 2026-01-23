@@ -54,6 +54,13 @@ function Experience() {
   return (
     <>
       <ExperienceCard
+        title="Engineering Fellow"
+        company="Kleiner Perkins"
+        description="Making new friends"
+        image="logos/kleiner_perkins_logo.jpeg"
+        xlink="https://www.kleinerperkins.com/fellows"
+      />
+      <ExperienceCard
         title="Incoming Software Engineer"
         company="Databricks"
         tags={[
@@ -70,16 +77,8 @@ function Experience() {
       <ExperienceCard
         title="Summer Fellows Grant Recipient"
         company="Y Combinator"
-        tags={[
-          "Startup",
-          "Software",
-          "Music Technology",
-          "Artificial Intelligence",
-          "LLM's",
-        ]}
-        dates="Jun 2025 - Sep 2025"
-        description="20k to build something great"
-        image="logos/yc_logo.png"
+        description="20k to build for a summer"
+        image="logos/yc_logo.jpeg"
         xlink="https://www.ycombinator.com/"
       />
       <ExperienceCard
