@@ -10,6 +10,7 @@ import { useTransitionDirection } from "./hooks/useDirection";
 import Spotlight from "./components/spotlight";
 import TabSwitcher from "./pages/TabSwitcher";
 import DrumMachinePage from "./pages/projects/DrumMaschinePage";
+import GalleryPage from "./pages/photogallery";
 
 function App() {
   const location = useLocation();
@@ -47,7 +48,8 @@ function App() {
             path="/life"
             element={
               <PageWrapper direction={direction}>
-                <Life />
+                <GalleryPage />
+                {/* <Life /> */}
               </PageWrapper>
             }
           />
