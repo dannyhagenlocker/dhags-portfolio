@@ -2,7 +2,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
-import Life from "./pages/life";
 import UnderConstruction from "./pages/underConstruction";
 import NotFound from "./pages/notFound";
 import PageWrapper from "./components/pageWrapper";
