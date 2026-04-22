@@ -20,8 +20,8 @@ import {
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 import { getImageUrl } from "../utils/utils";
 
-const bandTexturePath = getImageUrl("lanyard/lanyard_texture.png");
-const cardPath = getImageUrl("lanyard/lanyard.glb");
+const bandTexturePath = getImageUrl("lanyard/db_lanyard.png");
+const cardPath = getImageUrl("lanyard/db_badge.glb");
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 useGLTF.preload(cardPath);
