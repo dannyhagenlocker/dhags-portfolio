@@ -53,7 +53,7 @@ function AboutMe() {
 function Experience() {
   return (
     <>
-      <ExperienceCard
+      {/* <ExperienceCard
         title="Quant Trader"
         company="Optiver"
         tags={["Quant Finance", "AI", "Data Analytics"]}
@@ -61,14 +61,7 @@ function Experience() {
         description="Making bread in Chicago"
         image="logos/optiver_logo.jpeg"
         xlink="https://optiver.com"
-      />
-      <ExperienceCard
-        title="Labs Fellow"
-        company="Bain Capital Ventures"
-        description="Making other new friends"
-        image="logos/bcv_logo.png"
-        xlink="https://bcv.com"
-      />
+      /> */}
       <ExperienceCard
         title="Engineering Fellow"
         company="Kleiner Perkins"
