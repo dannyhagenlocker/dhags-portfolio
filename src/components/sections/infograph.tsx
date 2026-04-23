@@ -33,7 +33,7 @@ function AboutMe() {
   return (
     <>
       <p>
-        Hey, glad you’re here! My name is Danny and I am a sophomore at&nbsp;
+        I'm Danny, a sophomore at&nbsp;
         <a
           className="font-medium text-slate-200 hover:text-red-500 focus-visible:text-red-500"
           rel="noopener noreferrer"
