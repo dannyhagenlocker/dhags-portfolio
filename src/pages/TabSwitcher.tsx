@@ -1,11 +1,6 @@
 import { useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-
-const tabs = [
-  { name: "Home", path: "/" },
-  { name: "Projects", path: "/projects" },
-  { name: "Life", path: "/life" },
-];
+import { TABS, tabIndex } from "../config/tabs";
 
 export default function TabSwitcher() {
   const location = useLocation();
@@ -13,7 +8,7 @@ export default function TabSwitcher() {
 
   // Determine the active index based on the current URL path
   const activeIndex = useMemo(() => {
-    const idx = tabs.findIndex((tab) => tab.path === location.pathname);
+    const idx = tabIndex(location.pathname);
     return idx === -1 ? 0 : idx;
   }, [location.pathname]);
 
@@ -29,7 +24,7 @@ export default function TabSwitcher() {
           className="absolute h-[35px] w-[120px] rounded-full bg-slate-400/10 shadow-inner backdrop-blur-lg transition-transform duration-300 ease-out"
           style={{ transform: `translateX(${activeIndex * 100}%)`, zIndex: 1 }}
         />
-        {tabs.map((tab, index) => (
+        {TABS.map((tab, index) => (
           <button
             key={tab.name}
             onClick={() => handleTabClick(tab.path)}
